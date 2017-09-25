@@ -10,5 +10,6 @@
     <string name="alredy_added_cart">Already in cart</string>
     <string name="remove_added_cart">Remoed from cart</string>
     <string name="total">Total</string>
+    <string name="price">Price</string>
 
 </resources>

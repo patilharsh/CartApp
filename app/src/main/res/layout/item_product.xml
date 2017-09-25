@@ -36,6 +36,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:ellipsize="end"
+                android:textStyle="bold"
                 android:gravity="center_horizontal"
                 android:lines="1"
                 android:text="Product Name"

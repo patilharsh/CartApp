@@ -37,7 +37,7 @@ public class ShopingListAdapter extends RecyclerView.Adapter<ProductViewHolder> 
     @Override
     public void onBindViewHolder(ProductViewHolder holder, int position) {
 
-        holder.txtProductAmount.setText(shopApiResponses.get(position).getPrice());
+        holder.txtProductAmount.setText(context.getString(R.string.price)+": "+shopApiResponses.get(position).getPrice());
         holder.txtProductName.setText(shopApiResponses.get(position).getProductname());
         holder.txtVendorAddress.setText(shopApiResponses.get(position).getVendoraddress());
         holder.txtVendorName.setText(shopApiResponses.get(position).getVendorname());

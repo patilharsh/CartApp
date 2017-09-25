@@ -34,7 +34,7 @@ public class CartListAdapter extends RecyclerView.Adapter<CartViewHolder> {
 
     @Override
     public void onBindViewHolder(CartViewHolder holder, int position) {
-        holder.txtProductAmount.setText(shopApiResponses.get(position).getPrice());
+        holder.txtProductAmount.setText(context.getString(R.string.price)+"\n"+shopApiResponses.get(position).getPrice());
         holder.txtProductName.setText(shopApiResponses.get(position).getProductname());
         holder.txtVendorAddress.setText(shopApiResponses.get(position).getVendoraddress());
         holder.txtVendorName.setText(shopApiResponses.get(position).getVendorname());
