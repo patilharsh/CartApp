@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">CartApp</string>
+    <string name="products">Products</string>
+    <string name="cart">Cart</string>
+    <string name="shop">Shop</string>
+    <string name="add_to_cart">Add To Cart</string>
+    <string name="call_vendor">Call Vendor</string>
+    <string name="remove_from_cart">Remove From Cart</string>
+    <string name="sucess_added_cart">Sucessfully added to cart</string>
+    <string name="alredy_added_cart">Already in cart</string>
+    <string name="remove_added_cart">Remoed from cart</string>
+    <string name="total">Total</string>
+
+</resources>
