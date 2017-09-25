@@ -89,7 +89,6 @@
                     android:layout_width="0dp"
                     android:layout_height="@dimen/dp_50"
 
-                    android:layout_marginTop="@dimen/dp_10"
                     android:layout_weight=".50"
                     android:background="@drawable/button_bg_selector"
                     android:text="@string/call_vendor"
@@ -101,7 +100,6 @@
                     android:layout_height="@dimen/dp_50"
                     android:layout_alignParentRight="true"
                     android:layout_below="@+id/img_product_image"
-                    android:layout_marginTop="@dimen/dp_10"
                     android:layout_weight=".50"
                     android:background="@drawable/button_bg_selector"
                     android:text="@string/remove_from_cart"
