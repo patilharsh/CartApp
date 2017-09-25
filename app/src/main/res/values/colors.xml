@@ -12,8 +12,12 @@
     <color name="title_text_black">#000000</color>
     <color name="black_transparent">#10000000</color>
 
-    <color name="button_normal">#d1bcdc</color>
-    <color name="button_pressed">#9564ad</color>
+    <color name="button_normal">#8b96d2</color>
+    <color name="button_pressed">#6573c3</color>
 
     <color name="yellow_trans">#40FFFF00</color>
+    <color name="cart_bg">#b2b9e1</color>
+
+    <color name="tab_bg_selected">#5262bc</color>
+    <color name="tab_bg_normal">#8b96d2</color>
 </resources>

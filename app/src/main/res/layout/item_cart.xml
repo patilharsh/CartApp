@@ -13,9 +13,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="10dp"
-        card_view:cardBackgroundColor="@android:color/white"
+        card_view:cardBackgroundColor="@color/cart_bg"
         card_view:cardCornerRadius="10dp"
-        card_view:contentPadding="10dp">
+        card_view:contentPadding="0dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -24,30 +24,33 @@
             <ImageView
                 android:id="@+id/img_product_image"
                 android:layout_width="@dimen/dp_100"
-                android:layout_marginRight="@dimen/dp_10"
                 android:layout_height="@dimen/dp_100"
+                android:layout_marginRight="@dimen/dp_10"
                 android:scaleType="centerCrop" />
 
             <TextView
                 android:id="@+id/txt_pname"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textStyle="bold"
                 android:layout_toRightOf="@+id/img_product_image"
                 android:ellipsize="end"
                 android:lines="1"
-                android:textColor="@color/title_text_black"
                 android:text="Product Name"
+                android:textColor="@color/title_text_black"
                 android:textSize="@dimen/sp_18" />
 
             <TextView
                 android:id="@+id/txt_pamount"
-                android:layout_width="wrap_content"
+                android:layout_width="@dimen/dp_80"
                 android:layout_height="wrap_content"
-                android:textColor="@color/title_text_black"
                 android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_5"
                 android:ellipsize="end"
                 android:lines="1"
                 android:text="Price"
+                android:textColor="@color/title_text_black"
                 android:textSize="@dimen/sp_16" />
 
             <TextView
@@ -58,8 +61,8 @@
                 android:layout_toRightOf="@+id/img_product_image"
                 android:ellipsize="end"
                 android:lines="1"
-                android:textColor="@color/title_text_black"
                 android:text="Vender Name"
+                android:textColor="@color/title_text_black"
                 android:textSize="@dimen/sp_16" />
 
             <TextView
@@ -70,31 +73,40 @@
                 android:layout_toRightOf="@+id/img_product_image"
                 android:ellipsize="end"
                 android:lines="2"
-                android:textColor="@color/title_text_black"
                 android:text="Vendor Address"
+                android:textColor="@color/title_text_black"
                 android:textSize="@dimen/sp_16" />
 
-            <Button
-                android:id="@+id/btn_call_vendor"
-                android:layout_width="@dimen/dp_150"
-                android:textColor="@color/title_text_black"
-                android:layout_marginTop="@dimen/dp_10"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/img_product_image"
+                android:orientation="horizontal">
 
-                android:text="@string/call_vendor" />
+                <Button
+                    android:id="@+id/btn_call_vendor"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp_50"
 
-            <Button
-                android:id="@+id/btn_remove_from_cart"
-                android:layout_width="@dimen/dp_150"
-                android:textColor="@color/title_text_black"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/dp_10"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_weight=".50"
+                    android:background="@drawable/button_bg_selector"
+                    android:text="@string/call_vendor"
+                    android:textColor="@color/title_text_black" />
 
-                android:layout_alignParentRight="true"
-                android:layout_below="@+id/img_product_image"
+                <Button
+                    android:id="@+id/btn_remove_from_cart"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp_50"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/img_product_image"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_weight=".50"
+                    android:background="@drawable/button_bg_selector"
+                    android:text="@string/remove_from_cart"
 
-                android:text="@string/remove_from_cart" />
+                    android:textColor="@color/title_text_black" />
+            </LinearLayout>
         </RelativeLayout>
     </android.support.v7.widget.CardView>
 
