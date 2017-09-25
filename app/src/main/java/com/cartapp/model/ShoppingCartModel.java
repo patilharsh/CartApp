@@ -1,16 +1,13 @@
 package com.cartapp.model;
 
 
-import android.content.Intent;
-import android.net.Uri;
-
-import com.cartapp.fragment.RemoveNotifyDelegate;
+import com.cartapp.delegate.RemoveNotifyDelegate;
 import com.cartapp.model.network.ApiClient;
 import com.cartapp.model.network.EndPoint;
 import com.cartapp.model.network.ProductList;
 import com.cartapp.model.network.ShopApiResponse;
-import com.cartapp.presenter.CartDelegate;
-import com.cartapp.presenter.ProductDelegate;
+import com.cartapp.delegate.CartDelegate;
+import com.cartapp.delegate.ProductDelegate;
 import com.cartapp.utils.AppPreferences;
 import com.cartapp.utils.ObjectSerializer;
 

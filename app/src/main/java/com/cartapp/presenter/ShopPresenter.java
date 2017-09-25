@@ -1,8 +1,9 @@
 package com.cartapp.presenter;
 
 
-import com.cartapp.fragment.AlreadyAdddedDelegate;
-import com.cartapp.fragment.FillListDelegate;
+import com.cartapp.delegate.AlreadyAdddedDelegate;
+import com.cartapp.delegate.FillListDelegate;
+import com.cartapp.delegate.ProductDelegate;
 import com.cartapp.model.ShoppingCartModel;
 import com.cartapp.model.network.ShopApiResponse;
 

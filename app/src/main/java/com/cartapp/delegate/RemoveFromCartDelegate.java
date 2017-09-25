@@ -1,11 +1,9 @@
-package com.cartapp.fragment;
+package com.cartapp.delegate;
 
 import com.cartapp.model.network.ShopApiResponse;
 
-/**
- * Created by Harshal on 25/09/17.
- */
 
-public interface RemoveFromCart {
+
+public interface RemoveFromCartDelegate {
     void RemoveFromCart(ShopApiResponse shopApiResponse);
 }

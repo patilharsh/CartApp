@@ -1,4 +1,4 @@
-package com.cartapp.fragment;
+package com.cartapp.delegate;
 
 import com.cartapp.model.network.ShopApiResponse;
 

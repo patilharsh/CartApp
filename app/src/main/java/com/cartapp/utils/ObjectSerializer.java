@@ -7,9 +7,6 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
-/**
- * Created by Harshal on 24/09/17.
- */
 
 public class ObjectSerializer {
     public static String serialize(Serializable obj) throws IOException {

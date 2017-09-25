@@ -1,4 +1,4 @@
-package com.cartapp.presenter;
+package com.cartapp.delegate;
 
 import com.cartapp.model.network.ShopApiResponse;
 

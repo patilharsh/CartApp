@@ -1,10 +1,8 @@
-package com.cartapp.fragment;
+package com.cartapp.delegate;
 
 import com.cartapp.model.network.ShopApiResponse;
 
-/**
- * Created by Harshal on 24/09/17.
- */
+
 
 public interface AddToCartListnerDelegate {
     void onClick(ShopApiResponse shopApiResponse);

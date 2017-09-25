@@ -1,14 +1,15 @@
 package com.cartapp.presenter;
 
 
-import com.cartapp.fragment.FillListDelegate;
-import com.cartapp.fragment.RemoveNotifyDelegate;
+import com.cartapp.delegate.CartDelegate;
+import com.cartapp.delegate.FillListDelegate;
+import com.cartapp.delegate.RemoveNotifyDelegate;
 import com.cartapp.model.ShoppingCartModel;
 import com.cartapp.model.network.ShopApiResponse;
 
 import java.util.ArrayList;
 
-public class CartPresenter implements CartDelegate{
+public class CartPresenter implements CartDelegate {
 
     private FillListDelegate fillListDelegate;
     private RemoveNotifyDelegate removeNotifyDelegate;

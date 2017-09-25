@@ -14,17 +14,21 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.cartapp.R;
-import com.cartapp.activity.MainActivity;
+import com.cartapp.activity.ShoppingNCartActivity;
 import com.cartapp.adapter.CartListAdapter;
+import com.cartapp.delegate.CallVendorDelegate;
+import com.cartapp.delegate.FillListDelegate;
+import com.cartapp.delegate.RemoveFromCartDelegate;
+import com.cartapp.delegate.RemoveNotifyDelegate;
 import com.cartapp.model.network.ShopApiResponse;
 import com.cartapp.presenter.CartPresenter;
 
 import java.util.ArrayList;
 
-public class CartFragment extends Fragment implements FillListDelegate, CallVendorDelegate,RemoveFromCart,RemoveNotifyDelegate{
+public class CartFragment extends Fragment implements FillListDelegate, CallVendorDelegate,RemoveFromCartDelegate,RemoveNotifyDelegate {
     private View view;
     private RecyclerView recyclerViewCart;
-    private MainActivity mActivity;
+    private ShoppingNCartActivity mActivity;
     private CartListAdapter cartListAdapter;
     CartPresenter cartPresenter;
     private TextView txtTotalAmount;
@@ -32,7 +36,7 @@ public class CartFragment extends Fragment implements FillListDelegate, CallVend
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mActivity = (MainActivity) getActivity();
+        mActivity = (ShoppingNCartActivity) getActivity();
     }
 
     @Nullable

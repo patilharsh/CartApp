@@ -14,7 +14,7 @@ import com.cartapp.fragment.CartFragment;
 import com.cartapp.fragment.ShopFragment;
 import com.cartapp.utils.AppConstants;
 
-public class MainActivity extends Activity implements TabBarDelegate {
+public class ShoppingNCartActivity extends Activity implements TabBarDelegate {
 
     private TitleBar titleBar;
     private TabBarView tabBarView;
@@ -36,7 +36,7 @@ public class MainActivity extends Activity implements TabBarDelegate {
     public void initUI(){
 
         tabBarView = (TabBarView) findViewById(R.id.tab_bar);
-        tabBarView.setActivityForView(MainActivity.this);
+        tabBarView.setActivityForView(ShoppingNCartActivity.this);
         tabBarView.setCallbackListener(this);
         tabBarView.setTabBarSelection(AppConstants.MENU_PRODUCTS);
         setTitleBar(getString(R.string.shop));
@@ -66,8 +66,13 @@ public class MainActivity extends Activity implements TabBarDelegate {
     }
 
     public void replaceFragment(Fragment mFragment) {
+        clearBackStack();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.frame_content, mFragment).addToBackStack(null);
+        fragmentTransaction.replace(R.id.frame_content, mFragment);
         fragmentTransaction.commit();
+    }
+
+    public void clearBackStack() {
+        fragmentManager.popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
     }
 }
